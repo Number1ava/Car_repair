@@ -34,12 +34,19 @@ h6 {
 }
 body {
   font-family: "Roboto_regular";
+  background: #f5f5f5;
 }
 
 @mixin before {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
+}
+@mixin bg_settings {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
 }
 
 .btn {
@@ -63,6 +70,22 @@ body {
   }
 }
 
+.overline__mark {
+  position: relative;
+  padding-left: 24px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    bottom: -3px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/Overline_Mark.svg");
+  }
+}
+.title__margin {
+  margin: 33px 0px 36px 0px;
+}
 .container {
   max-width: 1270px;
   margin: 0 auto;
@@ -177,6 +200,9 @@ body {
     position: absolute;
     &-item {
       padding: 10px 10px 0px 5px;
+      &:hover {
+        color: #c40b0b;
+      }
     }
   }
 }
@@ -186,7 +212,7 @@ body {
   align-items: center;
   position: absolute;
   bottom: 50%;
-  left: 90%;
+  left: 92%;
   transform: translate(-50%, 50%);
   border-radius: 40px;
   padding: 10px;
@@ -235,4 +261,35 @@ body {
     margin-bottom: 50px;
   }
 }
+.about__inner {
+  position: relative;
+  bottom: 60px;
+  height: 780px;
+  padding: 100px 87px 0px 87px;
+  margin-bottom: 140px;
+  background-image: url("../images/about_bg.jpg");
+  @include bg_settings;
+  &-suptitle {
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+  }
+  &-title {
+    max-width: 583px;
+    font-family: "Roboto_bold";
+    font-size: 36px;
+    line-height: 42px;
+  }
+  &-text {
+    max-width: 846px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    margin-bottom: 40px;
+  }
+  &-img {
+    width: 100%;
+  }
+}
+
 @import "media";
