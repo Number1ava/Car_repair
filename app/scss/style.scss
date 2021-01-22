@@ -73,6 +73,9 @@ body {
 .overline__mark {
   position: relative;
   padding-left: 24px;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
   &::before {
     content: "";
     position: absolute;
@@ -212,7 +215,7 @@ body {
   align-items: center;
   position: absolute;
   bottom: 50%;
-  left: 92%;
+  left: 90%;
   transform: translate(-50%, 50%);
   border-radius: 40px;
   padding: 10px;
@@ -269,11 +272,6 @@ body {
   margin-bottom: 140px;
   background-image: url("../images/about_bg.jpg");
   @include bg_settings;
-  &-suptitle {
-    font-size: 12px;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-  }
   &-title {
     max-width: 583px;
     font-family: "Roboto_bold";
@@ -289,6 +287,38 @@ body {
   }
   &-img {
     width: 100%;
+  }
+}
+
+.promise__main {
+  margin-bottom: 120px;
+  &-title {
+    font-weight: 900;
+    font-size: 36px;
+  }
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    position: relative;
+    max-width: 235px;
+    margin-left: 90px;
+    &-icon {
+      position: absolute;
+      left: -84px;
+    }
+    &-title {
+      font-family: "Roboto_bold";
+      font-size: 19px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+    &-text {
+      line-height: 24px;
+      letter-spacing: 0.15px;
+      color: #4b4b4b;
+    }
   }
 }
 
