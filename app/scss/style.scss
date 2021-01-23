@@ -486,5 +486,41 @@ body {
     line-height: 42px;
   }
 }
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  margin-bottom: 40px;
+  &-logo {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto_bold";
+    img {
+      margin-right: 10px;
+    }
+  }
+  &-text {
+    max-width: 235px;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.footer__links {
+  max-width: 234px;
+  .footer__link {
+    display: block;
+    font-family: "Roboto_bold";
+    color: #4b4b4b;
+    margin-bottom: 12px;
+    transition: all 0.5s;
+    &:hover {
+      color: #c40b0b;
+    }
+    &-title {
+      margin-bottom: 12px;
+    }
+  }
+}
 
 @import "media";
