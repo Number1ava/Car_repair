@@ -363,7 +363,7 @@ body {
 }
 
 #registration {
-  min-height: 980px;
+  min-height: 880px;
   background-image: url("../images/registration_bg.jpg");
   @include bg_settings;
 }
@@ -424,5 +424,32 @@ body {
     font-size: 19px;
   }
 }
-
+.testimonials__main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  margin-bottom: 80px;
+  &-subtitle {
+    max-width: 324px;
+    margin-top: 30px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .comments {
+    max-width: 324px;
+    padding: 40px;
+    background-color: #fff;
+    &__text {
+      margin-bottom: 30px;
+      line-height: 24px;
+      background-color: #fff;
+    }
+    &__username {
+      position: relative;
+      left: 10px;
+      bottom: 18px;
+      font-family: "Roboto_bold";
+    }
+  }
+}
 @import "media";
