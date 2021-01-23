@@ -452,4 +452,39 @@ body {
     }
   }
 }
+#stats {
+  min-height: 670px;
+  background-image: url("../images/stats__bg.jpg");
+  @include bg_settings;
+  color: #fff;
+}
+.stats__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  margin-bottom: 100px;
+  &-subtitle {
+    max-width: 410px;
+    margin-top: 30px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+.stats__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-img,
+  &-descr {
+    display: inline-block;
+  }
+  &-number {
+    font-family: "Roboto_bold";
+    color: #c40b0b;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
 @import "media";
