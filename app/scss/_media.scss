@@ -1,0 +1,242 @@
+@media (max-width: 1270px) {
+  .search__cart {
+    left: 88%;
+  }
+}
+
+@media (max-width: 1070px) {
+  .search__cart {
+    left: 86%;
+  }
+}
+
+@media (max-width: 984px) {
+  .header__top {
+    flex-direction: column;
+    align-items: center;
+    .logo {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .header__nav {
+    height: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  .burger__menu {
+    &-button {
+      position: absolute;
+      bottom: 144px;
+      left: 10px;
+      width: 20px;
+      height: 20px;
+      z-index: 30;
+      transition: 0.5s;
+    }
+    &:hover &-lines {
+      filter: brightness(0.7);
+    }
+    &-lines,
+    &-lines::after,
+    &-lines::before {
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background-color: #fff;
+    }
+    &-lines {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-lines::before {
+      content: "";
+      top: -12px;
+    }
+    &-lines::after {
+      content: "";
+      top: 12px;
+    }
+    &-active &-button,
+    &-active &-lines {
+      background-color: transparent;
+    }
+    &-active &-lines::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+    &-active &-lines::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+    .menu {
+      position: fixed;
+      top: 0px;
+      left: -100%;
+      z-index: 20;
+      height: 100%;
+      flex-flow: column;
+      padding-top: 120px;
+      background-color: #2a2a2a;
+      overflow-y: auto;
+      transition: 0.5s;
+      &__list {
+        flex-direction: column;
+        &-item {
+          margin: 10px 60px 20px 20px;
+          &:hover .services__list {
+            display: block;
+            background-color: #2a2a2a;
+          }
+        }
+      }
+      &__list-link {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: white;
+        &:hover {
+          filter: brightness(0.7);
+        }
+      }
+      .services__list {
+        display: none;
+        position: absolute;
+        &-item {
+          padding: 10px 10px 0px 0px;
+          margin-bottom: 20px;
+        }
+        .menu__list-link2 {
+          display: inline-block;
+          font-size: 18px;
+          text-transform: uppercase;
+          color: #cc1e1e;
+          transition: 0.4s;
+          &:hover {
+            filter: brightness(0.7);
+          }
+        }
+      }
+    }
+    &-active .menu {
+      left: 0;
+    }
+    &-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vh;
+      height: 100vh;
+      z-index: 10;
+    }
+    &-active &-overlay {
+      display: block;
+    }
+  }
+  .search__cart {
+    bottom: 150px;
+    padding: 2px 12px;
+    background-color: #fff;
+    &:hover > .search__txt {
+      width: 120px;
+      padding: 0;
+    }
+    .cart {
+      margin-left: 12px;
+    }
+    .search__txt {
+      width: 120px;
+      font-size: 14px;
+    }
+    .search__btn {
+      padding-left: 8px;
+    }
+  }
+  .header__main {
+    margin-top: 150px;
+    max-width: 520px;
+    &-title {
+      font-size: 50px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .header__top {
+    .logo {
+      margin-bottom: 100px;
+      position: relative;
+      left: 35%;
+    }
+    .information {
+      flex-direction: column;
+      align-items: center;
+      .time {
+        max-width: 97px;
+        margin-bottom: 20px;
+      }
+      .contact {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .burger__menu {
+    &-button {
+      bottom: 350px;
+    }
+  }
+  .search__cart {
+    bottom: 280px;
+    left: 50%;
+    &:hover > .search__txt {
+      width: 160px;
+    }
+    .search__txt {
+      width: 160px;
+    }
+  }
+  .header__main {
+    margin: 80px auto 0px;
+    text-align: center;
+    max-width: 500px;
+    &-title {
+      font-size: 48px;
+    }
+  }
+}
+
+@media (max-width: 674px) {
+  .header__top {
+    .logo {
+      left: 30%;
+    }
+  }
+}
+@media (max-width: 504px) {
+  .header__top {
+    .logo {
+      left: 0%;
+    }
+  }
+  .header__main {
+    max-width: 380px;
+    &-title {
+      font-size: 38px;
+    }
+  }
+}
+@media (max-width: 360px) {
+  .header__top {
+    .logo {
+      left: 10%;
+    }
+  }
+  .header__main {
+    max-width: 280px;
+    &-title {
+      font-size: 34px;
+    }
+  }
+}
