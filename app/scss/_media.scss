@@ -35,6 +35,22 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-items: center;
   }
+  .testimonials__main {
+    position: relative;
+    justify-content: space-evenly;
+    &-title {
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+    &-subtitle {
+      max-width: 500px;
+      font-size: 35px;
+    }
+    .comments {
+      margin-top: 150px;
+    }
+  }
 }
 
 @media (max-width: 984px) {
@@ -278,6 +294,19 @@
       }
     }
   }
+  .testimonials__main {
+    &-subtitle {
+      max-width: 440px;
+      font-size: 30px;
+    }
+    .comments {
+      padding: 30px;
+      max-width: 280px;
+      &__text {
+        font-size: 15px;
+      }
+    }
+  }
 }
 
 @media (max-width: 674px) {
@@ -320,7 +349,6 @@
       }
     }
   }
-
   .reg__form {
     width: 460px;
     padding: 50px 0px;
@@ -336,6 +364,22 @@
     }
     &-btn {
       margin-right: 24px;
+    }
+  }
+  .testimonials__main {
+    position: unset;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    &-title {
+      position: unset;
+      max-width: 360px;
+      margin-bottom: 40px;
+    }
+    .comments {
+      padding: 30px;
+      max-width: 400px;
+      margin: 20px 0;
     }
   }
 }
@@ -392,6 +436,11 @@
   }
 }
 @media (max-width: 420px) {
+  .services__top {
+    &-title {
+      font-size: 30px;
+    }
+  }
   .reg__form {
     width: 330px;
     height: 700px;
@@ -405,6 +454,19 @@
     &-textarea {
       width: 280px;
       font-size: 15px;
+    }
+  }
+  .testimonials__main {
+    &-title {
+      max-width: 360px;
+      margin-bottom: 10px;
+    }
+    &-subtitle {
+      font-size: 24px;
+    }
+    .comments {
+      padding: 20px;
+      max-width: 300px;
     }
   }
 }
