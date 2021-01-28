@@ -486,6 +486,10 @@ body {
     font-size: 36px;
     line-height: 42px;
   }
+  &-item--position {
+    position: relative;
+    top: 7px;
+  }
 }
 .footer__inner {
   display: flex;
