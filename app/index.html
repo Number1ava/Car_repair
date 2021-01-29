@@ -134,7 +134,7 @@
           </div>
           <!-- GRID -->
           <div class="grid__container">
-            <div class="grid__item grid__item1">
+            <div class="grid__item grid__item1 wow animate__animated animate__fadeInUp">
               <img class="grid__item-img" src="images/grid__icon_car.svg" alt="icon" />
               <h5 class="grid__item-title">Multi Point Inspections</h5>
               <p class="grid__item-text">
@@ -142,7 +142,7 @@
                 dolores et quas.
               </p>
             </div>
-            <div class="grid__item grid__item2">
+            <div class="grid__item grid__item2 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
               <img class="grid__item-img" src="images/grid__icon_engine.svg" alt="icon" />
               <h5 class="grid__item-title">Auto Repair</h5>
               <p class="grid__item-text">
@@ -150,15 +150,15 @@
                 dolores et quas.
               </p>
             </div>
-            <div class="grid__item grid__item3">
-              <img class="grid__item-img" src="images/grid__icon_breaks.svg" alt="" />
+            <div class="grid__item grid__item3 wow animate__animated animate__fadeInUp" data-wow-delay=".8s">
+              <img class="grid__item-img" src="images/grid__icon_breaks.svg" alt="icon" />
               <h5 class="grid__item-title">Auto Maintenance</h5>
               <p class="grid__item-text">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos
                 dolores et quas.
               </p>
             </div>
-            <div class="grid__item grid__item4">
+            <div class="grid__item grid__item4 wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
               <img class="grid__item-img" src="images/grid__icon_tires.svg" alt="icon" />
               <h5 class="grid__item-title">Tires</h5>
               <p class="grid__item-text">
@@ -166,7 +166,7 @@
                 dolores et quas.
               </p>
             </div>
-            <div class="grid__item grid__item5">
+            <div class="grid__item grid__item5 wow animate__animated animate__fadeInUp" data-wow-delay="1.6s">
               <img class="grid__item-img" src="images/grid__icon_engineCheck.svg" alt="icon" />
               <h5 class="grid__item-title">Service Warranty</h5>
               <p class="grid__item-text">
@@ -174,7 +174,7 @@
                 dolores et quas.
               </p>
             </div>
-            <div class="grid__item grid__item6">
+            <div class="grid__item grid__item6 wow animate__animated animate__fadeInUp" data-wow-delay="2s">
               <img class="grid__item-img" src="images/grid__icon_shopping.svg" alt="icon" />
               <h5 class="grid__item-title">Shop Online</h5>
               <p class="grid__item-text">
@@ -209,7 +209,7 @@
             </form>
             <div class="status">
               <h5 class="status__title">Maxime placeat facere possimus omnis</h5>
-              <div class="status__number">17K</div>
+              <div class="status__number status__number-animated">17000</div>
               <span class="status__text">customers served (and counting)</span>
             </div>
           </div>
@@ -326,5 +326,8 @@
     </footer>
     <script src="js/main.min.js"></script>
     <script src="js/jquery.spincrement.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
