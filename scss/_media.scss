@@ -193,7 +193,7 @@
         position: absolute;
         &-item {
           padding: 10px 10px 0px 0px;
-          margin-bottom: 20px;
+          margin-bottom: 8px;
         }
         .menu__list-link2 {
           display: inline-block;
@@ -547,7 +547,7 @@
       max-width: 270px;
       font-size: 17px;
     }
-    .mediaDislpay_none{
+    .mediaDislpay_none {
       display: none;
     }
   }
@@ -567,6 +567,7 @@
       font-size: 30px;
     }
   }
+
   .reg__form {
     width: 330px;
     height: 700px;
@@ -628,6 +629,10 @@
   }
   .cards {
     &__item {
+      &-icon {
+        bottom: 120px;
+        left: 100px;
+      }
       &-title {
         margin: 0 auto 10px;
       }
