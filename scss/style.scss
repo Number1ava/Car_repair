@@ -107,7 +107,6 @@ body {
 }
 
 .header {
-  height: 100vh;
   color: #fff;
   font-family: "Roboto_bold";
   background-image: url("../images/header_bg.jpg");
@@ -115,6 +114,7 @@ body {
   background-size: cover;
   background-position: center top;
   object-fit: cover;
+  padding-bottom: 220px;
 }
 
 .header__top {

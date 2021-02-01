@@ -121,8 +121,8 @@
   .burger__menu {
     &-button {
       position: absolute;
-      bottom: 144px;
-      left: 10px;
+      bottom: 120px;
+      left: 20px;
       width: 20px;
       height: 20px;
       z-index: 30;
@@ -170,8 +170,7 @@
       left: -100%;
       z-index: 20;
       height: 100%;
-      flex-flow: column;
-      padding-top: 120px;
+      padding-top: 100px;
       background-color: #2a2a2a;
       overflow-y: auto;
       transition: 0.5s;
@@ -341,16 +340,6 @@
     }
   }
 }
-@media (max-width: 800px) and (orientation: landscape) {
-  .header__main {
-    max-width: 380px;
-    margin-top: 0px;
-    &-title {
-      font-size: 30px;
-      margin: 0 0 40px 0;
-    }
-  }
-}
 
 @media (max-width: 770px) {
   .grid__container {
@@ -475,24 +464,15 @@
     }
   }
 }
-@media (max-width: 674px) and (orientation: landscape) {
-  .header__main {
-    &-title {
-      font-size: 30px;
-    }
-  }
-}
-@media (max-width: 660px) {
-  .header__main {
-    max-width: 290px;
-    margin-top: 10px;
-    &-title {
-      font-size: 30px;
-      margin: 0 0 50px 0;
-    }
+@media (max-width: 639px) {
+  .header__top {
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 504px) {
+  .header {
+    padding-bottom: 140px;
+  }
   .header__top {
     .logo {
       left: 0%;
